@@ -1,22 +1,6 @@
 import styled from 'styled-components';
 import { MdThumbUp, MdThumbsUpDown, MdThumbDown } from 'react-icons/md';
 
-export const FeedbackWrapper = styled.div`
-  width: 400px;
-  padding: 25px;
-  background-color: rgb(243, 240, 240);
-  border-radius: 5px;
-
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-`;
-
-export const FeedbackTitle = styled.h1`
-  margin-bottom: 25px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-`;
-
 export const FeedbackList = styled.ul`
   display: flex;
   justify-content: center;
