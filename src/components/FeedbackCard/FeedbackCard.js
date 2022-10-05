@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   FeedbackList,
   FeedbackButton,
@@ -27,4 +28,8 @@ export const FeedbackCard = ({ updateValue }) => {
       </li>
     </FeedbackList>
   );
+};
+
+FeedbackCard.propTypes = {
+  updateValue: PropTypes.func.isRequired,
 };

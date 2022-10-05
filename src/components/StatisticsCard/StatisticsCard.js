@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StatisticsList, StatisticsItem } from './StatisticsCard.styled';
 
 export const StatisticsCard = ({
@@ -26,4 +27,14 @@ export const StatisticsCard = ({
       </StatisticsItem>
     </StatisticsList>
   );
+};
+
+StatisticsCard.propTypes = {
+  state: PropTypes.shape({
+    good: PropTypes.string.isRequired,
+    neutral: PropTypes.bool.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positiveFedback: PropTypes.number.isRequired,
+  }),
 };
