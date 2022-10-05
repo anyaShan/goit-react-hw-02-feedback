@@ -1,5 +1,3 @@
-import { MdThumbsUpDown, MdThumbDown } from 'react-icons/md';
-
 import {
   FeedbackWrapper,
   FeedbackTitle,

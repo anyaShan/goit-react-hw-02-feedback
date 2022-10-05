@@ -53,12 +53,12 @@ export const FeedbackButton = styled.button`
 `;
 
 export const FeedbackIconUp = styled(MdThumbUp)`
-  margin-left: 5px;
+  margin-left: 8px;
 `;
 
 export const FeedbackIconUpDown = styled(MdThumbsUpDown)`
-  margin-left: 5px;
+  margin-left: 8px;
 `;
 export const FeedbackIconDown = styled(MdThumbDown)`
-  margin-left: 5px;
+  margin-left: 8px;
 `;
