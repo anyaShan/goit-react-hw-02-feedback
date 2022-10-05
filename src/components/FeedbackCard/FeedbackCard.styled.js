@@ -30,8 +30,7 @@ export const FeedbackButton = styled.button`
   line-height: 1.9;
   letter-spacing: 0.06em;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: rgb(52, 162, 212);
   }
 `;
