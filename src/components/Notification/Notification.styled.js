@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Text = styled.p`
   padding: 5px;
+  color: white;
   border-radius: 5px;
   background-color: rgb(197, 194, 194);
   box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
