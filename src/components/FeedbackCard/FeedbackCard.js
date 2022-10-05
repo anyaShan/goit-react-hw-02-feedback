@@ -1,10 +1,13 @@
-import { MdThumbUp, MdThumbsUpDown, MdThumbDown } from 'react-icons/md';
+import { MdThumbsUpDown, MdThumbDown } from 'react-icons/md';
 
 import {
   FeedbackWrapper,
   FeedbackTitle,
   FeedbackList,
   FeedbackButton,
+  FeedbackIconUp,
+  FeedbackIconUpDown,
+  FeedbackIconDown,
 } from './FeedbackCard.styled';
 
 export const FeedbackCard = () => {
@@ -14,17 +17,18 @@ export const FeedbackCard = () => {
       <FeedbackList>
         <li>
           <FeedbackButton type="button">
-            Good <MdThumbUp />
+            Good
+            <FeedbackIconUp />
           </FeedbackButton>
         </li>
         <li>
           <FeedbackButton type="button">
-            Neutral <MdThumbsUpDown />
+            Neutral <FeedbackIconUpDown />
           </FeedbackButton>
         </li>
         <li>
           <FeedbackButton type="button">
-            Bad <MdThumbDown />
+            Bad <FeedbackIconDown />
           </FeedbackButton>
         </li>
       </FeedbackList>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MdThumbUp, MdThumbsUpDown, MdThumbDown } from 'react-icons/md';
 
 export const FeedbackWrapper = styled.div`
   width: 400px;
@@ -23,20 +24,20 @@ export const FeedbackList = styled.ul`
 `;
 
 export const FeedbackButton = styled.button`
-  display: inline-block;
-  /* justify-content: center;
-  align-items: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 100px;
   padding: 5px 10px;
+  text-align: center;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 
   background-color: rgb(241, 188, 90);
   color: white;
-
-  cursor: pointer;
-
-  text-align: center;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+    rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -49,4 +50,15 @@ export const FeedbackButton = styled.button`
   &:focus {
     background-color: rgb(52, 162, 212);
   }
+`;
+
+export const FeedbackIconUp = styled(MdThumbUp)`
+  margin-left: 5px;
+`;
+
+export const FeedbackIconUpDown = styled(MdThumbsUpDown)`
+  margin-left: 5px;
+`;
+export const FeedbackIconDown = styled(MdThumbDown)`
+  margin-left: 5px;
 `;
