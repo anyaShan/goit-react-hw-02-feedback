@@ -1,16 +1,23 @@
+import { Container } from 'components/App.styled';
+import { FeedbackCard } from 'components/FeedbackCard/FeedbackCard';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <FeedbackCard />
+
+      <h2>Statistics</h2>
+      <ul>
+        <li>
+          <p>Good: </p>
+        </li>
+        <li>
+          <p>Neutral: </p>
+        </li>
+        <li>
+          <p>Bad: </p>
+        </li>
+      </ul>
+    </Container>
   );
 };
