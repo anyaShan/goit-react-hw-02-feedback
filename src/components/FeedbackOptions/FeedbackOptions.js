@@ -5,24 +5,24 @@ import {
   FeedbackIconUp,
   FeedbackIconUpDown,
   FeedbackIconDown,
-} from './FeedbackCard.styled';
+} from './FeedbackOptions.styled';
 
-export const FeedbackCard = ({ updateValue }) => {
+export const FeedbackOptions = ({ onLeaveFeedback }) => {
   return (
     <FeedbackList>
       <li>
-        <FeedbackButton type="button" name="good" onClick={updateValue}>
+        <FeedbackButton type="button" name="good" onClick={onLeaveFeedback}>
           Good
           <FeedbackIconUp />
         </FeedbackButton>
       </li>
       <li>
-        <FeedbackButton type="button" name="neutral" onClick={updateValue}>
+        <FeedbackButton type="button" name="neutral" onClick={onLeaveFeedback}>
           Neutral <FeedbackIconUpDown />
         </FeedbackButton>
       </li>
       <li>
-        <FeedbackButton type="button" name="bad" onClick={updateValue}>
+        <FeedbackButton type="button" name="bad" onClick={onLeaveFeedback}>
           Bad <FeedbackIconDown />
         </FeedbackButton>
       </li>
@@ -30,6 +30,6 @@ export const FeedbackCard = ({ updateValue }) => {
   );
 };
 
-FeedbackCard.propTypes = {
+FeedbackOptions.propTypes = {
   updateValue: PropTypes.func.isRequired,
 };

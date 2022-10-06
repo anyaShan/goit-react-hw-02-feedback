@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import { Container } from 'components/App.styled';
 import { Section } from 'components/Section/Section';
-import { FeedbackCard } from 'components/FeedbackCard/FeedbackCard';
-import { StatisticsCard } from 'components/StatisticsCard/StatisticsCard';
+import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
+import { Statistics } from 'components/Statistics/Statistics';
 import { Notification } from 'components/Notification/Notification';
 
 export class App extends Component {
@@ -33,12 +33,12 @@ export class App extends Component {
     return (
       <Container>
         <Section title="Please leave feedback">
-          <FeedbackCard updateValue={this.updateValue} />
+          <FeedbackOptions onLeaveFeedback={this.updateValue} />
         </Section>
 
         <Section title="Statistics">
           {this.countTotalFeedback() > 0 ? (
-            <StatisticsCard
+            <Statistics
               good={this.state.good}
               neutral={this.state.neutral}
               bad={this.state.bad}

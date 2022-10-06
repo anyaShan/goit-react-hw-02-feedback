@@ -1,13 +1,7 @@
 import PropTypes from 'prop-types';
-import { StatisticsList, StatisticsItem } from './StatisticsCard.styled';
+import { StatisticsList, StatisticsItem } from './Statistics.styled';
 
-export const StatisticsCard = ({
-  good,
-  neutral,
-  bad,
-  total,
-  positiveFedback,
-}) => {
+export const Statistics = ({ good, neutral, bad, total, positiveFedback }) => {
   return (
     <StatisticsList>
       <StatisticsItem>
@@ -29,7 +23,7 @@ export const StatisticsCard = ({
   );
 };
 
-StatisticsCard.propTypes = {
+Statistics.propTypes = {
   state: PropTypes.shape({
     good: PropTypes.string.isRequired,
     neutral: PropTypes.bool.isRequired,
